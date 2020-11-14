@@ -1,0 +1,457 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* navbar */
+
+.navlogo {
+  border-left: 3px solid #000;
+}
+
+.navlogo a {
+  padding: 0.5rem;
+  color: #000;
+}
+
+.navbar {
+  z-index: 999;
+}
+
+/* /navbar */
+
+/* header */
+
+.slider-lanyer {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100vh;
+}
+
+.slider-caption h1 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.header .carousel-control-prev, .header .carousel-control-next {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-left: 0;
+  line-height: 50px;
+  color: #fff;
+  font-size: 28px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.header .carousel-control-prev {
+  top: 30%;
+}
+
+.header .carousel-control-next {
+  top: 38%;
+}
+
+.carousel-content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+.carousel-icon {
+  position: relative;
+  z-index: 10;
+}
+
+.carousel-content-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  width: 0;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  z-index: 0;
+}
+
+.carousel-icon i {
+  z-index: 10;
+}
+
+.header .carousel-control-prev:hover .carousel-content-fill,
+.header .carousel-control-next:hover .carousel-content-fill {
+  width: 50px;
+}
+
+.header .carousel-control-prev:hover .carousel-icon i,
+.header .carousel-control-next:hover .carousel-icon i {
+  color: #000;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+}
+
+.btn2 {
+  color: #fff;
+  border-color: #fff;
+  background-color: transparent;
+}
+
+.btn2:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* /header */
+
+/* about */
+.about {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.typed-cursor {
+  animation: cursor 0.3s infinite alternate;
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.about .btn {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #1f1f1f;
+  border: 1px solid #dedede;
+}
+
+.about .btn:hover {
+  color: #dedede;
+  border: 1px solid #dedede;
+  background-color: #1f1f1f;
+}
+
+.typed-words::before {
+  content: "";
+  color: #0fc7dc;
+  animation: typing 4s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "w";
+  }
+  1% {
+    content: "we";
+  }
+  2% {
+    content: "web";
+  }
+  3% {
+    content: "webs";
+  }
+  4% {
+    content: "webs";
+  }
+  5% {
+    content: "websi";
+  }
+  6% {
+    content: "websit";
+  }
+  7% {
+    content: "website";
+  }
+  8% {
+    content: "websites";
+  }
+  26% {
+    content: "website";
+  }
+  27% {
+    content: "websit";
+  }
+  28% {
+    content: "websi";
+  }
+  29% {
+    content: "webs";
+  }
+  30% {
+    content: "web";
+  }
+  31% {
+    content: "we";
+  }
+  32% {
+    content: "w";
+  }
+  33% {
+    content: "";
+  }
+  34% {
+    content: "s";
+  }
+  35% {
+    content: "so";
+  }
+  36% {
+    content: "sof";
+  }
+  37% {
+    content: "soft";
+  }
+  38% {
+    content: "softw";
+  }
+  39% {
+    content: "softwa";
+  }
+  40% {
+    content: "softwar";
+  }
+  41% {
+    content: "software";
+  }
+  65% {
+    content: "softwar";
+  }
+  66% {
+    content: "softwa";
+  }
+  67% {
+    content: "softw";
+  }
+  68% {
+    content: "soft";
+  }
+  69% {
+    content: "soft";
+  }
+  70% {
+    content: "sof";
+  }
+  71% {
+    content: "so";
+  }
+  72% {
+    content: "s";
+  }
+  73% {
+    content: "";
+  }
+  74% {
+    content: "a";
+  }
+  75% {
+    content: "ap";
+  }
+  76% {
+    content: "app";
+  }
+  77% {
+    content: "apps";
+  }
+  97% {
+    content: "app";
+  }
+  98% {
+    content: "ap";
+  }
+  99% {
+    content: "a";
+  }
+  100% {
+    content: "";
+  }
+}
+
+/* /about */
+
+/* team */
+.title {
+  margin: 1.5rem 0;
+}
+.title h2::before {
+  content: "c";
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+  opacity: 0.2;
+  font-weight: 900;
+}
+
+.member-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 195, 218, 0.9);
+  color: #fff;
+  transform: translateY(20%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.member:hover .member-overlay {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.member{
+  margin-bottom: 1.5rem;
+}
+
+.member-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+.member-icons a {
+  color: #fff;
+  padding: 0.5rem;
+}
+
+/* /team */
+
+
+/* services */
+
+.services{
+  background-color: #636363;
+  color: #fff;
+}
+
+.service-icon{
+  
+  font-size: 2rem;
+  color: #007067;
+  margin-bottom: 1rem;
+}
+
+.services .title h2::before {
+  content: "w";
+  position: absolute;
+  left:.3em ;
+
+}
+
+.service-list ul li{
+  padding: 6px 0
+}
+
+/* /services */
+
+/* pricing */
+.price{
+  border-bottom: 1px solid #eee;
+}
+
+.price h2{
+  font-size: 4rem;
+}
+
+.price h2 span{
+  font-size: 1.25rem;
+  vertical-align: top;
+}
+
+.card{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1rem;
+}
+
+.card-gold .price{
+  color:#00c3da;
+  padding: 1rem 1rem;
+}
+
+.card .featured-label {
+  position: absolute;
+  top: 20;
+  right: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #00c3da;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+/* /pricing */
+
+
+/* customers */
+
+.customers{
+background-color: #f7f7f7;
+}
+
+.customers .carousel-item img{
+  z-index: 99;
+  width: 10px ;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+
+}
+
+.customers .carousel-caption{
+    background-color: #fff;
+    color: #000;
+    padding: 75px 100px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    max-width: 750px;
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.customers .carousel-indicators .active{
+ background-color: #00c3da;
+}
+
+.customers .carousel-indicators  li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.customers a span{
+  color: #000;
+  background-color: #000;
+}
+
+.contacts .title h2::before {
+  content: "G";
+  position: absolute;
+  left:.3em ;
+
+}
+/* /customers */
+
+
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  
+}
