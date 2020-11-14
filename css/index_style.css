@@ -455,3 +455,9 @@ background-color: #f7f7f7;
 
   
 }
+
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
