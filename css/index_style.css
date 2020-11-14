@@ -298,7 +298,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 195, 218, 0.9);
+  background-color: red;
   color: #fff;
   transform: translateY(20%);
   opacity: 0;
